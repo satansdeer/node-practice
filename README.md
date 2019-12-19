@@ -1,7 +1,17 @@
-# 13.12.19
+# 20.12.19
 
-* readFile - Ruslan Gaifutdinov
-    * https://github.com/dwyl/sendemail/blob/582eb5b7d865959d569be50dc6fb84ca146c2ad1/lib/index.js#L38
-* Electron
-* Proton - ReactNative desktop
-* Testing
+* streams basics
+    * what is a stream
+    * examples of streams
+    * stream types
+        * Readable
+        * Writable
+        * Duplex
+        * Transform
+* object mode
+    * piping streams
+    * chain of streams
+    * pipeline (stream.pipeline)
+    * pipe error handling
+* streams + promises
+* stream video
