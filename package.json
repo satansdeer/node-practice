@@ -18,6 +18,7 @@
   "homepage": "https://github.com/satansdeer/node-practice#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "inquirer": "^7.0.1"
+    "inquirer": "^7.0.1",
+    "node-resque": "^6.0.6"
   }
 }
