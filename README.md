@@ -15,6 +15,7 @@
 - swagger
   - https://github.com/swagger-api/swagger-codegen
 - rest api
+  - https://restfulapi.net/rest-architectural-constraints/
   - https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
   - nested resources
     - https://stackoverflow.com/questions/20951419/what-are-best-practices-for-rest-nested-resources
