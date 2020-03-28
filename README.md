@@ -4,7 +4,7 @@
   - go to https://console.developers.google.com/apis/dashboard and create new project
   - `Credentials` -> `Create Credentials` -> `Create client id`
   - `Authorized JavaScript Origins` = `http://localhost:3000`
-  - `Authorized redirect URIs` = `http://localhost:3000/auth/google/callback`
+  - `Authorized redirect URIs` = `http://localhost.com:3000/auth/google/callback`
   - `client id` && `client secret`
 - Docker compose
   - `docker-compose up` - build, create and run containers
@@ -24,7 +24,9 @@
   - https://www.npmjs.com/package/nconf
 - lowdb
   - https://github.com/typicode/lowdb
+- models vs migrations
 - testing server
+  - https://www.npmjs.com/package/supertest
 - express vs koa
 - serving static files
   - https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html
