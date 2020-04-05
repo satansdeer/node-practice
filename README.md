@@ -1,35 +1,24 @@
-# 2020-03-28 - Week 3
+# 2020-04-04 - Week 4
 
-- google authorization
-  - go to https://console.developers.google.com/apis/dashboard and create new project
-  - `Credentials` -> `Create Credentials` -> `Create client id`
-  - `Authorized JavaScript Origins` = `http://localhost:3000`
-  - `Authorized redirect URIs` = `http://localhost.com:3000/auth/google/callback`
-  - `client id` && `client secret`
-- Docker compose
-  - `docker-compose up` - build, create and run containers
-  - `docker-compose stop` - will stop containers
-  - `docker-compose down` - will stop and remove containers
-- pagination
-  - `curl "http://localhost:3000/users?page=2&limit=2"`
-- swagger
-  - https://github.com/swagger-api/swagger-codegen
-- rest api
-  - https://restfulapi.net/rest-architectural-constraints/
-  - https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
-  - nested resources
-    - https://stackoverflow.com/questions/20951419/what-are-best-practices-for-rest-nested-resources
-- event emitter
-- nconf
-  - https://www.npmjs.com/package/nconf
-- lowdb
-  - https://github.com/typicode/lowdb
-- models vs migrations
-- testing server
-  - https://www.npmjs.com/package/supertest
-- express vs koa
-- serving static files
-  - https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html
-- AOP (Aspect Oriented Programming)
-  - https://github.com/k1r0s/kaop
-  - https://en.wikipedia.org/wiki/Aspect-oriented_programming
+- Для каких проектов подходит node
+- Rest api vs GraphQL
+- Паттерны
+- Запуск тестов перед деплоем
+- node + react
+  - https://github.com/jaredpalmer/razzle
+
+    ```
+      npx create-razzle-app my-app
+      cd my-app
+      npm start
+    ```
+
+  - https://www.gatsbyjs.org/
+
+    ```
+      gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world
+    ```
+
+- localization
+  - https://github.com/jeresig/i18n-node-2
+  - https://www.gnu.org/software/gettext/
