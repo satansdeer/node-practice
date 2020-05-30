@@ -2,8 +2,12 @@ const fs = require('fs');
 
 console.log('Начало работы');
 
-setTimeout(() => {console.log('setTimeout happened')}, 0);
-// setTimeout(() => {console.log('setTimeout happened');process.nextTick(() => {console.log('promise nextTick happened')});}, 0);
+setTimeout(() => {
+  console.log('setTimeout 1 happened');
+  Promise.resolve().then(() => console.log('timeout promise resolve'))
+}, 0);
+setTimeout(() => {console.log('setTimeout 2 happened')}, 0)
+setTimeout(() => {console.log('setTimeout 3 happened')}, 0)
 
 fs.readFile(__filename, (err, file) => {console.log('file reading')});
 

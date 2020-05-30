@@ -1,7 +1,9 @@
-# 2020-03-14 - Week 1
+# 2020-05-30 - Week 1
 
 * Event loop example
     * ![Event Loop](event_loop.png)
+    * Changes after node v11
+        * https://github.com/nodejs/node/pull/22842
     * Promises:
         * Native promises: https://javascript.info/microtask-queue
         * Q: https://github.com/kriskowal/q
