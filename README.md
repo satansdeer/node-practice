@@ -1,15 +1,71 @@
-# 2020-05-30 - Week 1
+# 2020-06-06 - Week 2
 
-* Event loop example
-    * ![Event Loop](event_loop.png)
-    * Changes after node v11
-        * https://github.com/nodejs/node/pull/22842
-    * Promises:
-        * Native promises: https://javascript.info/microtask-queue
-        * Q: https://github.com/kriskowal/q
-        * Bluebird: https://github.com/petkaantonov/bluebird/
-    * Почитать: https://nodejs.org/ru/docs/guides/dont-block-the-event-loop/
-    * Посмотреть: https://www.youtube.com/watch?v=PNa9OMajw9w
-* Когда читать файлы синхронно (readFileSync)
-    * https://github.com/dwyl/sendemail/blob/582eb5b7d865959d569be50dc6fb84ca146c2ad1/lib/index.js#L38
-* Тестирование fs
+- Docker
+  - Container history
+    - https://dzone.com/articles/evolution-of-linux-containers-future
+  - What Are Containers
+    - https://jvns.ca/blog/2016/10/10/what-even-is-a-container/
+  - Containers from first principles
+    - https://fzakaria.com/2020/05/31/containers-from-first-principles.html
+  - Dockerfile
+    - https://docs.docker.com/engine/reference/builder/
+  - Commands
+    - ```
+        docker image build -t example_app:1.0 .
+      ```
+      - `-t` provides tag name.
+    - ```
+        docker container run --publish 8000:8080 --detach --name example example_app:1.0
+      ```
+      - `-publish` port forwarding
+      - `--detach` run in background
+      - `--name` container name
+    - Remove container
+      ```
+        docker container rm --force example
+      ```
+    - List images
+      ```
+        docker image ls
+        docker images
+      ```
+    - List containers
+      ```
+        docker ps -a
+      ```
+    - Connect to running container
+      ```
+        docker exec -it example /bin/bash
+      ```
+- Environment variables
+
+  - https://en.wikipedia.org/wiki/Environment_variable#Unix
+  - Example
+    - ```
+       export VARIABLE=value
+       echo $VARIABLE
+       unset VARIABLE
+       echo $VARIABLE
+      ```
+  - no booleans
+
+- Storing secrets
+  - use `.env`
+  - aws https://aws.amazon.com/blogs/aws/aws-secrets-manager-store-distribute-and-rotate-credentials-securely/
+  - heroku https://devcenter.heroku.com/articles/config-vars
+- ExpressJS Middlewares
+  - https://expressjs.com/en/guide/writing-middleware.html
+- Security
+  - https://expressjs.com/en/advanced/best-practice-security.html
+  - https://juice-shop.herokuapp.com/#/
+    - https://github.com/bkimminich/juice-shop
+  - http://nodegoat.herokuapp.com/tutorial
+    - http://nodegoat.herokuapp.com/
+    - https://github.com/OWASP/NodeGoat
+  - https://cheatsheetseries.owasp.org/cheatsheets/Nodejs_security_cheat_sheet.html
+  - https://www.owasp.org/index.php/Main_Page
+  
+
+
+---
+* https://nodejs.org/api/worker_threads.html
