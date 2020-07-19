@@ -1,7 +1,19 @@
-# 13.12.19
+# 27.12.19
 
-* readFile - Ruslan Gaifutdinov
-    * https://github.com/dwyl/sendemail/blob/582eb5b7d865959d569be50dc6fb84ca146c2ad1/lib/index.js#L38
-* Electron
-* Proton - ReactNative desktop
-* Testing
+* controlled promises
+* graphql
+* redis
+    * https://github.com/actionhero/node-resque
+* performance
+    https://clinicjs.org/
+    https://github.com/mcollina/autocannon
+    https://grafana.com/
+* docker
+    * docker build -t <username>/node-web-app .
+    * docker run -p 49160:8080 -d <username>/node-web-app
+    * docker ps
+    * docker logs <container id>
+    * docker exec -it <container id> /bin/bash
+    * curl -i localhost:49160
+* MVC
+    * https://martinfowler.com/architecture/
